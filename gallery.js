@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Clear any existing content
       galleryGrid.innerHTML = '';
 
-      // Create gallery items
-      images.forEach(imagePath => {
+      // Create gallery items with staggered fade-in
+      images.forEach((imagePath, index) => {
         const link = document.createElement('a');
         link.href = imagePath;
         link.className = 'gallery-item';
@@ -31,6 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
         img.alt = '';
         img.loading = 'lazy';
         img.decoding = 'async';
+
+        // Start hidden, fade in when loaded
+        img.style.opacity = '0';
+        img.onload = function() {
+          setTimeout(() => {
+            img.style.opacity = '1';
+          }, index * 30); // Stagger the fade-in
+        };
 
         link.appendChild(img);
         galleryGrid.appendChild(link);

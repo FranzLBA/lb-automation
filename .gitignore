@@ -1,0 +1,12 @@
+# Backup folder (original uncompressed images)
+images-backup/
+
+# PowerShell scripts (not needed for website)
+*.ps1
+
+# Temp files
+nul
+images/nul
+
+# Claude config
+.claude/

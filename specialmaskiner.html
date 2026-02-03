@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <title>Specialmaskiner – Leunbach Automation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="leunbach automation logo">
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Forside</a></li>
+        <li><a href="projekter.html" class="active" data-i18n="nav.projects">Projekter</a></li>
+        <li><a href="kompetencer.html" data-i18n="nav.competences">Kompetencer</a></li>
+        <li><a href="om.html" data-i18n="nav.about">Om</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+      <button class="lang-toggle" aria-label="Switch to English">EN</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
+  <main class="page-main">
+    <section class="gallery-section">
+      <nav class="gallery-nav">
+        <a href="robotter.html" class="gallery-nav-link prev">
+          <span class="gallery-nav-title" data-i18n="gallery.nav.robots">Robotløsninger</span>
+        </a>
+        <a href="udvikling.html" class="gallery-nav-link next">
+          <span class="gallery-nav-title" data-i18n="gallery.nav.mechanical">Mekanisk design</span>
+        </a>
+      </nav>
+
+      <h1 data-i18n="gallery.specialmachines.title">Specialmaskiner</h1>
+      <p class="gallery-description" data-i18n="gallery.specialmachines.desc">
+        Vi udvikler og fremstiller specialbyggede maskiner til produktion og
+        industri. Vi arbejder sammen med jer om at finde de løsninger der bedst
+        opfylder jeres behov — fra koncept og design til færdig maskine.
+      </p>
+
+      <div class="gallery-grid" data-gallery="specialmaskiner">
+        <!-- Images loaded automatically from gallery-images.json -->
+      </div>
+
+      <nav class="gallery-nav bottom">
+        <a href="robotter.html" class="gallery-nav-link prev">
+          <span class="gallery-nav-title" data-i18n="gallery.nav.robots">Robotløsninger</span>
+        </a>
+        <a href="udvikling.html" class="gallery-nav-link next">
+          <span class="gallery-nav-title" data-i18n="gallery.nav.mechanical">Mekanisk design</span>
+        </a>
+      </nav>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-company">
+        <img src="images/logo-icon.svg" alt="Leunbach Automation" class="footer-logo">
+        <p><strong>CVR 18735237</strong></p>
+        <a>
+          Uplandsgade 72<br>
+          2300 København<br>
+          Danmark
+        </a>
+      </div>
+      <div class="footer-contact">
+        <h3 data-i18n="footer.contact">KONTAKT</h3>
+        <p>
+          <a href="mailto:info@lb-automation.dk">info@lb-automation.dk</a><br>
+        </p>
+        <p class="footer-social">
+          <a href="https://www.linkedin.com/company/110438411/admin/dashboard/" target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

@@ -4,153 +4,162 @@
   <meta charset="UTF-8">
   <title>Om – Leunbach Automation</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <nav class="nav">
       <div class="nav-logo">
-        <img src="images/logo.png" alt="Leunbach Automation logo">
+        <img src="images/logo.svg" alt="leunbach automation logo">
       </div>
-  
+
       <ul class="nav-links">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="projekter.html">Projekter</a></li>
-        <li><a href="kompetencer.html">Kompetencer</a></li>
-        <li><a href="om.html" class="active">Om</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Forside</a></li>
+        <li><a href="projekter.html" data-i18n="nav.projects">Projekter</a></li>
+        <li><a href="kompetencer.html" data-i18n="nav.competences">Kompetencer</a></li>
+        <li><a href="om.html" class="active" data-i18n="nav.about">Om</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        <span class="nav-indicator"></span>
       </ul>
+      <button class="lang-toggle" aria-label="Switch to English">EN</button>
     </nav>
   </header>
 
+  <!-- Main content -->
   <main class="page-main">
-    <!-- BUND: billede + tekst -->
     <div class="about-section">
+
+      <!-- Intro: text + image -->
       <div class="about-row">
         <div class="about-text">
-          <p>
-            Løve Teknik har mere end 30 års erfaring med udvikling og
+          <p data-i18n="about.p1">
+            Leunbach Automation har mere end 30 års erfaring med udvikling og
             fremstilling af specialmaskiner og automationsløsninger.
           </p>
 
-          <p>
+          <p data-i18n="about.p2">
             Med fokus på kvalitet, fleksibilitet og godt samarbejde leverer
             vi gennemtænkte totalløsninger udviklet i tæt dialog med kunden.
           </p>
 
-          <p>
+          <p data-i18n="about.p3">
             Fra vores værksted i København varetager vi alle faser af
             opgaveløsningen.
           </p>
         </div>
 
         <div class="about-image">
-          <img src="images/about/om1.jpg" alt="">
+          <img src="images/about/om1.jpg" alt="" style="object-position: 50% 30%" loading="lazy" decoding="async">
         </div>
       </div>
-  
-    
+
+      <!-- Process steps -->
       <section class="process-section">
-        <!-- Process -->
         <div class="process-grid">
+
           <div class="process-item">
             <div class="process-icon">
               <img src="images/about/proces1.svg" alt="design">
             </div>
-            <h3>Udvikling og design</h3>
-            <p>
+            <h3 data-i18n="about.process1.title">Udvikling og design</h3>
+            <p data-i18n="about.process1.text">
               På baggrund af dialog med kunden udvikler og designer vi et
               koncept, der passer ind i den konkrete produktion eller
               arbejdsproces. Vores erfaring giver et bredt løsningsgrundlag.
             </p>
           </div>
 
-          
-      
           <div class="process-item">
             <div class="process-icon">
               <img src="images/about/proces2.svg" alt="implementation">
             </div>
-            <h3>Fremstilling</h3>
-            <p>
+            <h3 data-i18n="about.process2.title">Fremstilling</h3>
+            <p data-i18n="about.process2.text">
               Med udgangspunkt i det godkendte design fremstiller vi maskinen.
               Vi anvender både standardkomponenter og specialdele produceret
               i eget værksted.
             </p>
           </div>
-      
+
           <div class="process-item">
             <div class="process-icon">
               <img src="images/about/proces3.svg" alt="implementation">
             </div>
-            <h3>Implementering</h3>
-            <p>
+            <h3 data-i18n="about.process3.title">Implementering</h3>
+            <p data-i18n="about.process3.text">
               Vi varetager installation, indkøring og aflevering hos kunden,
               så løsningen er klar til drift uden ekstra arbejde for jer.
             </p>
           </div>
-      
+
           <div class="process-item">
             <div class="process-icon">
               <img src="images/about/proces4.svg" alt="documentation">
             </div>
-            <h3>Dokumentation</h3>
-            <p>
+            <h3 data-i18n="about.process4.title">Dokumentation</h3>
+            <p data-i18n="about.process4.text">
               Al nødvendig dokumentation leveres struktureret og overskueligt,
               herunder el-dokumentation, CE-mærkning og brugervejledninger.
             </p>
           </div>
-      
+
         </div>
       </section>
 
-      <!-- BUND: billede + tekst -->
+      <!-- Secondary: image + text (reversed) -->
       <div class="about-row reverse">
         <div class="about-image">
-          <img src="images/about/om2.jpg" alt="">
+          <img src="images/about/om2.jpg" alt="" style="object-fit: cover; object-position: 50% 30%;" loading="lazy" decoding="async">
         </div>
 
         <div class="about-text">
-          <h3>Automation, CNC-bearbejdning og PLC-styring</h3>
-          <p>
+          <h3 data-i18n="about.secondary.title">Automation, CNC-bearbejdning og PLC-styring</h3>
+          <p data-i18n="about.secondary.text">
             Vi leverer alt fra CNC-fremstilling af komplekse emner i metal
             til fuldautomatiserede produktionsanlæg.
           </p>
         </div>
       </div>
+
     </div>
-  
-    
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
-  
+
       <div class="footer-company">
-        <h3>LEUNBACH AUTOMATION</h3>
-        <p><strong>CVR 18735237 </strong> </p>
+        <img src="images/logo-icon.svg" alt="Leunbach Automation" class="footer-logo">
+        <p><strong>CVR 18735237</strong></p>
         <a>
           Uplandsgade 72<br>
           2300 København<br>
           Danmark
         </a>
       </div>
-  
+
       <div class="footer-contact">
-        <h3>KONTAKT</h3>
+        <h3 data-i18n="footer.contact">KONTAKT</h3>
         <p>
           <a href="mailto:info@lb-automation.dk">info@lb-automation.dk</a><br>
         </p>
-  
+
         <p class="footer-social">
           <a href="https://www.linkedin.com/company/110438411/admin/dashboard/" target="_blank" rel="noopener">
             LinkedIn
           </a>
         </p>
       </div>
-  
+
     </div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

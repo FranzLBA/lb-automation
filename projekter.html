@@ -4,88 +4,91 @@
   <meta charset="UTF-8">
   <title>Projekter – Leunbach Automation</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="site-header">
-        <nav class="nav">
-          <div class="nav-logo">
-            <img src="images/logo.png" alt="Leunbach Automation logo">
-          </div>
-      
-          <ul class="nav-links">
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="projekter.html" class="active">Projekter</a></li>
-            <li><a href="kompetencer.html">Kompetencer</a></li>
-            <li><a href="om.html">Om</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
-      </header>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="leunbach automation logo">
+      </div>
 
-      <main class="page-main">
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Forside</a></li>
+        <li><a href="projekter.html" class="active" data-i18n="nav.projects">Projekter</a></li>
+        <li><a href="kompetencer.html" data-i18n="nav.competences">Kompetencer</a></li>
+        <li><a href="om.html" data-i18n="nav.about">Om</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+      <button class="lang-toggle" aria-label="Switch to English">EN</button>
+    </nav>
+  </header>
 
-        
+  <!-- Main content -->
+  <main class="page-main">
 
-        <section class="projects-overview">
-            
-      
-          <a href="automation.html" class="project-tile">
-            <img src="images/projects/automation/forside.jpg" alt="">
-            <span>Automation</span>
-          </a>
-      
-          <a href="specialmaskiner.html" class="project-tile">
-            <img src="images/projects/specialmaskiner/forside.jpg" alt="">
-            <span>Specialmaskiner</span>
-          </a>
-      
-          <a href="robotter.html" class="project-tile">
-            <img src="images/projects/robotter/forside.jpg" alt="">
-            <span>Robotløsninger</span>
-          </a>
-      
-          <a href="udvikling.html" class="project-tile">
-            <img src="images/projects/udvikling/forside.jpg" alt="">
-            <span>Udvikling</span>
-          </a>
+    <!-- Project tiles -->
+    <section class="projects-overview">
+      <a href="automation.html" class="project-tile">
+        <img src="images/projects/automation/forside.jpg" alt="" style="object-position: 50% 30%">
+        <span data-i18n="projects.automation">Automation</span>
+      </a>
 
-      
-        </section>
+      <a href="specialmaskiner.html" class="project-tile">
+        <img src="images/projects/specialmaskiner/forside.jpg" alt="" style="object-position: 50% 30%">
+        <span data-i18n="projects.specialmachines">Specialmaskiner</span>
+      </a>
 
-        
-      
-      </main>
-      
+      <a href="robotter.html" class="project-tile">
+        <img src="images/projects/robotter/forside.jpg" alt="" style="object-position: 50% 30%">
+        <span data-i18n="projects.robots">Robotløsninger</span>
+      </a>
 
+      <a href="udvikling.html" class="project-tile">
+        <img src="images/projects/udvikling/forside.jpg" alt="" style="object-position: 50% 30%">
+        <span data-i18n="projects.mechanical">Mekanisk design</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
-  
+
       <div class="footer-company">
-        <h3>LEUNBACH AUTOMATION</h3>
-        <p><strong>CVR 18735237 </strong> </p>
+        <img src="images/logo-icon.svg" alt="Leunbach Automation" class="footer-logo">
+        <p><strong>CVR 18735237</strong></p>
         <a>
           Uplandsgade 72<br>
           2300 København<br>
           Danmark
         </a>
       </div>
-  
+
       <div class="footer-contact">
-        <h3>KONTAKT</h3>
+        <h3 data-i18n="footer.contact">KONTAKT</h3>
         <p>
           <a href="mailto:info@lb-automation.dk">info@lb-automation.dk</a><br>
         </p>
-  
+
         <p class="footer-social">
           <a href="https://www.linkedin.com/company/110438411/admin/dashboard/" target="_blank" rel="noopener">
             LinkedIn
           </a>
         </p>
       </div>
-  
+
     </div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

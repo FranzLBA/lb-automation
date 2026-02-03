@@ -4,110 +4,118 @@
   <meta charset="UTF-8">
   <title>Forside</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <body>
 
-    <header class="site-header">
-        <nav class="nav">
-          <div class="nav-logo">
-            <div class="process-icon">
-              <img src="images/logo.svg" alt="leunbach automation logo">
-            </div>
-          </div>
-      
-          <ul class="nav-links">
-            <li><a href="index.html" class="active">Forside</a></li>
-            <li><a href="projekter.html">Projekter</a></li>
-            <li><a href="kompetencer.html">Kompetencer</a></li>
-            <li><a href="om.html">Om</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
-        
-      </header>
-      
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <div class="nav-logo">
+        <img src="images/logo.svg" alt="leunbach automation logo">
+      </div>
 
+      <ul class="nav-links">
+        <li><a href="index.html" class="active" data-i18n="nav.home">Forside</a></li>
+        <li><a href="projekter.html" data-i18n="nav.projects">Projekter</a></li>
+        <li><a href="kompetencer.html" data-i18n="nav.competences">Kompetencer</a></li>
+        <li><a href="om.html" data-i18n="nav.about">Om</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        <span class="nav-indicator"></span>
+      </ul>
+      <button class="lang-toggle" aria-label="Switch to English">EN</button>
+    </nav>
+  </header>
+
+  <!-- Main content -->
   <main>
 
+    <!-- Hero banner / slideshow -->
     <section class="hero">
-        <img src="images/hero/hero1.jpg" alt="Automation og maskiner">
-      
-        <div class="hero-text">
-          <p>
-            Løve Teknik er en lille virksomhed med stor erfaring.
-            Som lokal totalleverandør har vi i 30 år løst specialopgaver
-            for en lang række industrier.
-          </p>
-      
-          <p>
-            Fra vores værksted i København varetager vi hele processen
-            fra udvikling til færdigt produkt.
-          </p>
-        </div>
-      </section>
+      <img src="images/hero/hero1.jpg" alt="Automation og maskiner" style="object-position: 50% 10%" class="hero-slide active">
+      <img src="images/hero/hero2.jpg" alt="Automation og maskiner" style="object-position: 50% 30%" class="hero-slide">
+      <img src="images/hero/hero3.jpg" alt="Automation og maskiner" style="object-position: 50% 60%" class="hero-slide">
+      <img src="images/hero/hero4.jpg" alt="Automation og maskiner" style="object-position: 50% 20%" class="hero-slide">
+      <img src="images/hero/hero5.jpg" alt="Automation og maskiner" style="object-position: 50% 70%" class="hero-slide">
+      <img src="images/hero/hero6.jpg" alt="Automation og maskiner" style="object-position: 50% 80%" class="hero-slide">
+
+      <div class="hero-text">
+        <p data-i18n="hero.p1">
+          Leunbach Automation er en lille virksomhed med stor erfaring.
+          Som lokal totalleverandør har vi i 30 år løst specialopgaver
+          for en lang række industrier.
+        </p>
+
+        <p data-i18n="hero.p2">
+          Fra vores værksted i København varetager vi hele processen
+          fra udvikling til færdigt produkt.
+        </p>
+      </div>
+    </section>
 
   </main>
 
+  <!-- Specialists grid -->
   <section class="specialists">
-    <h2>Vi er specialister i</h2>
-  
+    <h2 data-i18n="specialists.title">Vi er specialister i</h2>
+
     <div class="specialists-grid">
-  
       <a href="#" class="specialist">
-        <img src="images/specialists/automation.jpg" alt="">
-        <span>Automation</span>
-      </a>
-  
-      <a href="#" class="specialist">
-        <img src="images/specialists/specialmaskiner.jpg" alt="">
-        <span>Specialmaskiner</span>
-      </a>
-  
-      <a href="#" class="specialist">
-        <img src="images/specialists/robotter.jpg" alt="">
-        <span>Robotløsninger</span>
+        <img src="images/specialists/automation.jpg" alt="" loading="lazy" decoding="async">
+        <span data-i18n="specialists.automation">Automation</span>
       </a>
 
       <a href="#" class="specialist">
-        <img src="images/specialists/udvikling.jpg" alt="">
-        <span>Udvikling</span>
+        <img src="images/specialists/specialmaskiner.jpg" alt="" loading="lazy" decoding="async">
+        <span data-i18n="specialists.specialmachines">Specialmaskiner</span>
       </a>
-  
+
+      <a href="#" class="specialist">
+        <img src="images/specialists/robotter.jpg" alt="" loading="lazy" decoding="async">
+        <span data-i18n="specialists.robots">Robotløsninger</span>
+      </a>
+
+      <a href="#" class="specialist">
+        <img src="images/specialists/udvikling.jpg" alt="" loading="lazy" decoding="async">
+        <span data-i18n="specialists.mechanical">Mekanik</span>
+      </a>
     </div>
-
   </section>
 
-  
-
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
-  
+
       <div class="footer-company">
-        <h3>LEUNBACH AUTOMATION</h3>
-        <p><strong>CVR 18735237 </strong> </p>
+        <img src="images/logo-icon.svg" alt="Leunbach Automation" class="footer-logo">
+        <p><strong>CVR 18735237</strong></p>
         <a>
           Uplandsgade 72<br>
           2300 København<br>
           Danmark
         </a>
       </div>
-  
+
       <div class="footer-contact">
-        <h3>KONTAKT</h3>
+        <h3 data-i18n="footer.contact">KONTAKT</h3>
         <p>
           <a href="mailto:info@lb-automation.dk">info@lb-automation.dk</a><br>
         </p>
-  
+
         <p class="footer-social">
           <a href="https://www.linkedin.com/company/110438411/admin/dashboard/" target="_blank" rel="noopener">
             LinkedIn
           </a>
         </p>
       </div>
-  
+
     </div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

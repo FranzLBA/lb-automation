@@ -2,108 +2,117 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8">
-  <title>Kontakt – Leunbach Automation</title>
+  <title>Kompetencer – Leunbach Automation</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- Header -->
   <header class="site-header">
     <nav class="nav">
       <div class="nav-logo">
-        <img src="images/logo.png" alt="Leunbach Automation logo">
+        <img src="images/logo.svg" alt="leunbach automation logo">
       </div>
-  
+
       <ul class="nav-links">
-        <li><a href="index.html">Forside</a></li>
-        <li><a href="projekter.html">Projekter</a></li>
-        <li><a href="kompetencer.html" class="active">Kompetencer</a></li>
-        <li><a href="om.html">Om</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Forside</a></li>
+        <li><a href="projekter.html" data-i18n="nav.projects">Projekter</a></li>
+        <li><a href="kompetencer.html" class="active" data-i18n="nav.competences">Kompetencer</a></li>
+        <li><a href="om.html" data-i18n="nav.about">Om</a></li>
+        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+        <span class="nav-indicator"></span>
       </ul>
+      <button class="lang-toggle" aria-label="Switch to English">EN</button>
     </nav>
   </header>
 
+  <!-- Main content -->
   <main class="page-main">
-  
-    <section class="competences">
 
+    <!-- Competence grid -->
+    <section class="competences">
       <div class="competence-grid">
 
-        <div class="competence-item">
-          <img src="images/icons/design.svg" alt="">
-          <h3>Teknisk design og udvikling</h3>
-        </div>
+        <a href="specialmaskiner.html" class="competence-item">
+          <img src="images/kompetencer/Teknisk design.jpg" alt="Teknisk design og udvikling" style="object-position: 0% 50%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.design">Teknisk design og udvikling</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/robot.svg" alt="">
-          <h3>Robotter og End-of-arm tools</h3>
-        </div>
+        <a href="robotter.html" class="competence-item">
+          <img src="images/kompetencer/Robot.jpg" alt="Robotter og End-of-arm tools" style="object-position: 50% 50%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.robots">Robotter og End-of-arm tools</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/plc.svg" alt="">
-          <h3>PLC- og HMI-programmering</h3>
-        </div>
+        <a href="automation.html" class="competence-item">
+          <img src="images/kompetencer/PLC og HMI.jpg" alt="PLC- og HMI-programmering" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.plc">PLC- og HMI-programmering</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/servo.svg" alt="">
-          <h3>Servo og motion control</h3>
-        </div>
+        <a href="automation.html" class="competence-item">
+          <img src="images/kompetencer/Servo og motion control.jpg" alt="Servo og motion control" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.servo">Servo og motion control</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/vision.svg" alt="">
-          <h3>Machine vision</h3>
-        </div>
+        <a href="automation.html" class="competence-item">
+          <img src="images/kompetencer/Machine vision.jpg" alt="Machine vision" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.vision">Machine vision</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/panel.svg" alt="">
-          <h3>Styretavler og el-dokumentation</h3>
-        </div>
+        <a href="automation.html" class="competence-item">
+          <img src="images/kompetencer/Styretavler og el-dokumentation.jpg" alt="Styretavler og el-dokumentation" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.panels">Styretavler og el-dokumentation</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/ce.svg" alt="">
-          <h3>Risikovurdering og CE-mærkning</h3>
-        </div>
+        <a href="specialmaskiner.html" class="competence-item">
+          <img src="images/kompetencer/Risikovurdering og CE-mærkning.jpg" alt="Risikovurdering og CE-mærkning" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.ce">Risikovurdering og CE-mærkning</h3>
+        </a>
 
-        <div class="competence-item">
-          <img src="images/icons/cnc.svg" alt="">
-          <h3>CNC-bearbejdning og 3D-print</h3>
-        </div>
+        <a href="udvikling.html" class="competence-item">
+          <img src="images/kompetencer/CNC-bearbejdning og 3D-print.jpg" alt="CNC-bearbejdning og 3D-print" style="object-position: 50% 30%" loading="lazy" decoding="async">
+          <h3 data-i18n="comp.cnc">CNC-bearbejdning og 3D-print</h3>
+        </a>
 
       </div>
-
-</section>
-
+    </section>
 
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
-  
+
       <div class="footer-company">
-        <h3>LEUNBACH AUTOMATION</h3>
-        <p><strong>CVR 18735237 </strong> </p>
+        <img src="images/logo-icon.svg" alt="Leunbach Automation" class="footer-logo">
+        <p><strong>CVR 18735237</strong></p>
         <a>
           Uplandsgade 72<br>
           2300 København<br>
           Danmark
         </a>
       </div>
-  
+
       <div class="footer-contact">
-        <h3>KONTAKT</h3>
+        <h3 data-i18n="footer.contact">KONTAKT</h3>
         <p>
           <a href="mailto:info@lb-automation.dk">info@lb-automation.dk</a><br>
         </p>
-  
+
         <p class="footer-social">
           <a href="https://www.linkedin.com/company/110438411/admin/dashboard/" target="_blank" rel="noopener">
             LinkedIn
           </a>
         </p>
       </div>
-  
+
     </div>
   </footer>
 
+  <script src="translations.js"></script>
+  <script src="lang.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>

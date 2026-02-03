@@ -753,6 +753,7 @@ section {
 .gallery-grid {
   column-count: 3;
   column-gap: var(--space-md);
+  transition: opacity 0.5s ease;
 }
 
 .gallery-item {

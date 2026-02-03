@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const galleryName = galleryGrid.dataset.gallery;
   if (!galleryName) return;
 
+  // Hide gallery initially
+  galleryGrid.style.opacity = '0';
+
   // Load the images JSON
   fetch('gallery-images.json')
     .then(response => response.json())
@@ -14,14 +17,18 @@ document.addEventListener('DOMContentLoaded', function() {
       const images = data[galleryName];
       if (!images || images.length === 0) {
         galleryGrid.innerHTML = '<p>Ingen billeder fundet.</p>';
+        galleryGrid.style.opacity = '1';
         return;
       }
 
       // Clear any existing content
       galleryGrid.innerHTML = '';
 
-      // Create gallery items with staggered fade-in
-      images.forEach((imagePath, index) => {
+      let loadedCount = 0;
+      const firstBatch = Math.min(6, images.length); // Wait for first 6 images
+
+      // Create gallery items
+      images.forEach((imagePath) => {
         const link = document.createElement('a');
         link.href = imagePath;
         link.className = 'gallery-item';
@@ -32,20 +39,26 @@ document.addEventListener('DOMContentLoaded', function() {
         img.loading = 'lazy';
         img.decoding = 'async';
 
-        // Start hidden, fade in when loaded
-        img.style.opacity = '0';
+        // Track when first batch loads to show gallery
         img.onload = function() {
-          setTimeout(() => {
-            img.style.opacity = '1';
-          }, index * 30); // Stagger the fade-in
+          loadedCount++;
+          if (loadedCount === firstBatch) {
+            galleryGrid.style.opacity = '1';
+          }
         };
 
         link.appendChild(img);
         galleryGrid.appendChild(link);
       });
+
+      // Fallback: show gallery after 2 seconds regardless
+      setTimeout(() => {
+        galleryGrid.style.opacity = '1';
+      }, 2000);
     })
     .catch(error => {
       console.error('Error loading gallery:', error);
       galleryGrid.innerHTML = '<p>Kunne ikke indlæse billeder.</p>';
+      galleryGrid.style.opacity = '1';
     });
 });

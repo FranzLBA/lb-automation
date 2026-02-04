@@ -28,6 +28,9 @@ const translations = {
     "hero.p2": "Som lille virksomhed arbejder vi fleksibelt og i tæt dialog med kunden, hvilket sikrer sammenhæng i projektet og kort vej fra beslutning til handling.",
     "hero.p3": "Vi påtager os komplekse automationsprojekter samt service, ombygning og udvidelse af eksisterende anlæg.",
     "hero.p4": "Læs mere om vores arbejdsområder og kompetencer her på siden.",
+    "hero.mobile.p1": "LBA leverer specialløsninger inden for automation og maskinbyggeri. Som lille virksomhed arbejder vi fleksibelt og i tæt dialog med kunden, hvilket sikrer sammenhæng i projektet og kort vej fra beslutning til handling.",
+    "hero.mobile.p2": "Vi påtager os komplekse automationsprojekter samt service, ombygning og udvidelse af eksisterende anlæg.",
+    "hero.mobile.p3": "Læs mere om vores arbejdsområder og kompetencer her på siden.",
 
     // Index - Specialists
     "specialists.title": "Vi er specialister i",
@@ -120,6 +123,9 @@ const translations = {
     "hero.p2": "As a compact team, we work flexibly and maintain close collaboration with our clients, ensuring project consistency and efficient decision-making.",
     "hero.p3": "We take on complex automation projects as well as service, modifications and expansions of existing systems.",
     "hero.p4": "Learn more about our capabilities and areas of expertise on this site.",
+    "hero.mobile.p1": "LBA delivers specialized solutions in automation and machine building. As a small team, we work flexibly and maintain close collaboration with our clients.",
+    "hero.mobile.p2": "We take on complex automation projects as well as service, modifications and expansions of existing systems.",
+    "hero.mobile.p3": "Learn more about our capabilities and areas of expertise on this site.",
 
     // Index - Specialists
     "specialists.title": "We specialize in",

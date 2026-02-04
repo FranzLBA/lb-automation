@@ -319,6 +319,10 @@ section {
   font-style: italic;
 }
 
+.mobile-only {
+  display: none;
+}
+
 /* -- 6b. Specialists grid ----------------------------------- */
 
 .specialists {
@@ -1023,6 +1027,14 @@ section {
     max-width: none;
     padding: var(--space-md);
     font-size: 15px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
   }
 
   /* Specialists grid */

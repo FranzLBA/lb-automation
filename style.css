@@ -233,6 +233,10 @@ section {
   text-align: center;
 }
 
+.footer-dira a {
+  display: block;
+}
+
 .footer-dira img {
   height: 60px;
   width: auto;

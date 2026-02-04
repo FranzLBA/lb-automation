@@ -229,6 +229,24 @@ section {
   font-weight: 600;
 }
 
+.footer-dira {
+  text-align: center;
+}
+
+.footer-dira img {
+  height: 60px;
+  width: auto;
+  display: block;
+  margin: 0 auto var(--space-sm);
+}
+
+.footer-dira p {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-dark2);
+  margin: 0;
+}
+
 .footer-contact a {
   display: inline-block;
   transition: transform 0.2s ease, color 0.2s ease;

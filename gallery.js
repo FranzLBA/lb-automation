@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   galleryGrid.style.opacity = '0';
 
   // Load the images JSON
-  fetch('gallery-images.json')
+  fetch('/gallery-images.json')
     .then(response => response.json())
     .then(data => {
       const images = data[galleryName];

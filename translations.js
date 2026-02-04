@@ -83,7 +83,7 @@ const translations = {
     "gallery.specialmachines.title": "Specialmaskiner",
     "gallery.specialmachines.desc": "Vi udvikler og fremstiller specialbyggede maskiner til produktion og industri. Vi arbejder sammen med jer om at finde de løsninger der bedst opfylder jeres behov — fra koncept og design til færdig maskine.",
     "gallery.robots.title": "Robotløsninger",
-    "gallery.robots.desc": "Vi leverer løsninger inden for robotautomatisering og emnehåndtering. Vi har bl.a. erfaring med udvikling og fremstilling af griberværktøjer (End-of-Arm Tools) til effektiv og sikker håndtering af store og små emner.",
+    "gallery.robots.desc": "Vi leverer løsninger indenfor robotintegration, herunder indtretning robotcelle, programmering, sammenbygning af maskiner og sikkerhedsfunktioner. Med stor erfaring indenfor specialiserede End-of-Arm Tools og periferiudstyr sikrer vi effektiv håndtering af emner.",
     "gallery.mechanical.title": "Mekanisk design",
     "gallery.mechanical.desc": "Vi har som lille virksomhed med egne fremstillingsfaciliteter de bedste rammer for at udvikle specialudstyr til problemer, der kræver en særlig løsning. Vi går til udviklingsarbejdet med mange års erfaring i mekaniske, elektriske og materialemæssige løsninger.",
 
@@ -178,7 +178,7 @@ const translations = {
     "gallery.specialmachines.title": "Custom Machines",
     "gallery.specialmachines.desc": "We develop and manufacture custom-built machines for production and industry. We work with you to find the solutions that best meet your needs — from concept and design to finished machine.",
     "gallery.robots.title": "Robot Solutions",
-    "gallery.robots.desc": "We deliver solutions in robot automation and material handling. We have experience in developing and manufacturing gripper tools (End-of-Arm Tools) for efficient and safe handling of large and small items.",
+    "gallery.robots.desc": "We deliver solutions in robot integration, including cell setup, programming, communication and safety functions. With extensive experience in specialized End-of-Arm Tools and peripheral equipment, we ensure efficient part handling.",
     "gallery.mechanical.title": "Mechanical Design",
     "gallery.mechanical.desc": "As a small company with our own manufacturing facilities, we have the best conditions to develop special equipment for problems that require a particular solution. We approach development work with many years of experience in mechanical, electrical and material solutions.",
 

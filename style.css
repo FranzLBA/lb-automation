@@ -1003,8 +1003,8 @@ section {
     column-count: 2;
   }
 
-  .gallery-nav-link {
-    font-size: 18px;
+  .gallery-nav-link .gallery-nav-title {
+    display: none;
   }
 
   /* Page main */
@@ -1013,9 +1013,32 @@ section {
   }
 
   /* Footer */
+  .site-footer {
+    padding: var(--space-lg) var(--space-md);
+  }
+
   .footer-inner {
     flex-direction: column;
     gap: var(--space-xl);
     margin-right: 0;
+  }
+
+  /* Competences */
+  .competences {
+    padding: var(--space-xl) var(--space-md);
+  }
+
+  /* Process icons */
+  .process-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .process-item h3 {
+    font-size: 16px;
+  }
+
+  .process-item p {
+    font-size: 14px;
   }
 }

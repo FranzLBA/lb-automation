@@ -976,6 +976,8 @@ section {
   }
 
   .process-section {
+    background: var(--bg-dark);
+    margin: var(--space-xl) calc(-1 * var(--space-md) - var(--space-xl));
     padding: var(--space-xl) var(--space-md);
   }
 

@@ -24,8 +24,10 @@ const translations = {
     "footer.dira": "Medlem af DIRA",
 
     // Index - Hero
-    "hero.p1": "Leunbach Automation er en lille virksomhed med stor erfaring. Som lokal totalleverandør har vi i 30 år løst specialopgaver for en lang række industrier.",
-    "hero.p2": "Fra vores værksted i København varetager vi hele processen fra udvikling til færdigt produkt.",
+    "hero.p1": "LBA rådgiver, udvikler og leverer specialløsninger inden for automation og maskinbyggeri. Med base i København varetager vi hele processen fra udvikling og fremstilling til styring, programmering og CE-mærkning.",
+    "hero.p2": "Som lille virksomhed arbejder vi fleksibelt og i tæt dialog med kunden, hvilket sikrer sammenhæng i projektet og kort vej fra beslutning til handling.",
+    "hero.p3": "Vi påtager os komplekse automationsprojekter samt service, ombygning og udvidelse af eksisterende anlæg.",
+    "hero.p4": "Læs mere om vores arbejdsområder og kompetencer her på siden.",
 
     // Index - Specialists
     "specialists.title": "Vi er specialister i",
@@ -114,8 +116,10 @@ const translations = {
     "footer.dira": "Member of DIRA",
 
     // Index - Hero
-    "hero.p1": "Leunbach Automation is a small company with extensive experience. As a local full-service provider, we have solved specialized tasks for a wide range of industries for 30 years.",
-    "hero.p2": "From our workshop in Copenhagen, we handle the entire process from development to finished product.",
+    "hero.p1": "LBA provides consulting, development and delivery of specialized solutions in automation and machine building. Based in Copenhagen, we handle the complete process from development and manufacturing to control systems, programming and CE certification.",
+    "hero.p2": "As a compact team, we work flexibly and maintain close collaboration with our clients, ensuring project consistency and efficient decision-making.",
+    "hero.p3": "We take on complex automation projects as well as service, modifications and expansions of existing systems.",
+    "hero.p4": "Learn more about our capabilities and areas of expertise on this site.",
 
     // Index - Specialists
     "specialists.title": "We specialize in",

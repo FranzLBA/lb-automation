@@ -980,14 +980,17 @@ section {
   }
 
   .process-section {
-    margin-left: calc(-1 * var(--space-md) * 2);
-    margin-right: calc(-1 * var(--space-md) * 2);
-    padding: var(--space-xl) var(--space-lg);
+    width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: var(--space-xl) var(--space-md);
+    box-sizing: border-box;
   }
 
   .process-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--space-md);
+    max-width: 100%;
   }
 
   .process-icon {
@@ -998,6 +1001,11 @@ section {
   .process-icon img {
     width: 100%;
     height: 100%;
+  }
+
+  .process-item h3 {
+    font-size: 13px;
+    letter-spacing: 0;
   }
 
   .process-item p {

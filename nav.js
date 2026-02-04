@@ -146,4 +146,16 @@
     if (e.key === "ArrowLeft") show(currentIndex - 1);
     if (e.key === "ArrowRight") show(currentIndex + 1);
   });
+
+  // Swipe support for mobile
+  var touchStartX = 0;
+  lightbox.addEventListener("touchstart", function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+  lightbox.addEventListener("touchend", function (e) {
+    var diff = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(diff) < 50) return;
+    if (diff > 0) show(currentIndex - 1);
+    else show(currentIndex + 1);
+  });
 })();

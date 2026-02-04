@@ -79,7 +79,7 @@ const translations = {
 
     // Gallery pages
     "gallery.automation.title": "Automation",
-    "gallery.automation.desc": "Vi er specialister i at udvikle, fremstille og implementere specialbyggede maskiner og anlæg til automation og produktion. Vi varetager hele processen fra udvikling og design til fremstilling, montage, tavlebygning og programmering samt implementering.",
+    "gallery.automation.desc": "LBA designer og bygger styretavler og automationsløsninger tilpasset det enkelte projekt. Vi arbejder med komponenter fra førende leverandører inden for PLC, servo, frekvensomformer, vision-systemer og sikkerhed. Vores fokus er på funktionalitet, ordenlig udførelse og nem vedligeholdelse - med tavler og dokumentation udført efter gældende standarder.",
     "gallery.specialmachines.title": "Specialmaskiner",
     "gallery.specialmachines.desc": "Vi udvikler og fremstiller specialbyggede maskiner til produktion og industri. Vi arbejder sammen med jer om at finde de løsninger der bedst opfylder jeres behov — fra koncept og design til færdig maskine.",
     "gallery.robots.title": "Robotløsninger",
@@ -100,7 +100,7 @@ const translations = {
     "title.projects": "Projects – LBA",
     "title.automation": "Automation – LBA",
     "title.robots": "Robot Solutions – LBA",
-    "title.specialmachines": "Special Machines – LBA",
+    "title.specialmachines": "Custom Machines – LBA",
     "title.mechanical": "Mechanical Design – LBA",
     "title.competences": "Competences – LBA",
     "title.about": "About – LBA",
@@ -130,18 +130,18 @@ const translations = {
     // Index - Specialists
     "specialists.title": "We specialize in",
     "specialists.automation": "Automation",
-    "specialists.specialmachines": "Special Machines",
+    "specialists.specialmachines": "Custom Machines",
     "specialists.robots": "Robot Solutions",
     "specialists.mechanical": "Mechanics",
 
     // Projects
     "projects.automation": "Automation",
-    "projects.specialmachines": "Special Machines",
+    "projects.specialmachines": "Custom Machines",
     "projects.robots": "Robot Solutions",
     "projects.mechanical": "Mechanical Design",
 
     // About page
-    "about.p1": "Leunbach Automation has more than 30 years of experience in developing and manufacturing special machines and automation solutions.",
+    "about.p1": "Leunbach Automation has more than 30 years of experience in developing and manufacturing custom machines and automation solutions.",
     "about.p2": "With a focus on quality, flexibility and good collaboration, we deliver well-thought-out complete solutions developed in close dialogue with the customer.",
     "about.p3": "From our workshop in Copenhagen, we handle all phases of the project.",
     "about.process1.title": "Development & Design",
@@ -174,8 +174,8 @@ const translations = {
 
     // Gallery pages
     "gallery.automation.title": "Automation",
-    "gallery.automation.desc": "We specialize in developing, manufacturing and implementing custom-built machines and systems for automation and production. We handle the entire process from development and design to manufacturing, assembly, panel building and programming as well as implementation.",
-    "gallery.specialmachines.title": "Special Machines",
+    "gallery.automation.desc": "LBA designs and builds control panels and automation solutions tailored to each project. We work with components from leading suppliers of PLCs, servo drives, frequency converters, vision systems and safety equipment. Our focus is on functionality, quality workmanship and easy maintenance - with panels and documentation executed according to current standards.",
+    "gallery.specialmachines.title": "Custom Machines",
     "gallery.specialmachines.desc": "We develop and manufacture custom-built machines for production and industry. We work with you to find the solutions that best meet your needs — from concept and design to finished machine.",
     "gallery.robots.title": "Robot Solutions",
     "gallery.robots.desc": "We deliver solutions in robot automation and material handling. We have experience in developing and manufacturing gripper tools (End-of-Arm Tools) for efficient and safe handling of large and small items.",
@@ -184,7 +184,7 @@ const translations = {
 
     // Gallery navigation
     "gallery.nav.automation": "Automation",
-    "gallery.nav.specialmachines": "Special Machines",
+    "gallery.nav.specialmachines": "Custom Machines",
     "gallery.nav.robots": "Robot Solutions",
     "gallery.nav.mechanical": "Mechanical Design"
   }

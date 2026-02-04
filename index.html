@@ -21,9 +21,11 @@
   <title>LBA – Specialmaskiner & Automation</title>
   <meta name="page-title-key" content="title.home">
   <link rel="stylesheet" href="/style.css">
+  <link rel="preload" as="image" href="/images/hero/hero1.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
 
@@ -51,12 +53,12 @@
 
     <!-- Hero banner / slideshow -->
     <section class="hero">
-      <img src="/images/hero/hero1.jpg" alt="Automation og maskiner" style="object-position: 50% 10%" class="hero-slide active">
-      <img src="/images/hero/hero2.jpg" alt="Automation og maskiner" style="object-position: 50% 30%" class="hero-slide">
-      <img src="/images/hero/hero3.jpg" alt="Automation og maskiner" style="object-position: 50% 60%" class="hero-slide">
-      <img src="/images/hero/hero4.jpg" alt="Automation og maskiner" style="object-position: 50% 20%" class="hero-slide">
-      <img src="/images/hero/hero5.jpg" alt="Automation og maskiner" style="object-position: 50% 70%" class="hero-slide">
-      <img src="/images/hero/hero6.jpg" alt="Automation og maskiner" style="object-position: 50% 80%" class="hero-slide">
+      <img src="/images/hero/hero1.jpg" alt="Automation og maskiner" style="object-position: 50% 10%" class="hero-slide active" fetchpriority="high">
+      <img data-src="/images/hero/hero2.jpg" alt="Automation og maskiner" style="object-position: 50% 30%" class="hero-slide">
+      <img data-src="/images/hero/hero3.jpg" alt="Automation og maskiner" style="object-position: 50% 60%" class="hero-slide">
+      <img data-src="/images/hero/hero4.jpg" alt="Automation og maskiner" style="object-position: 50% 20%" class="hero-slide">
+      <img data-src="/images/hero/hero5.jpg" alt="Automation og maskiner" style="object-position: 50% 70%" class="hero-slide">
+      <img data-src="/images/hero/hero6.jpg" alt="Automation og maskiner" style="object-position: 50% 80%" class="hero-slide">
 
       <div class="hero-text">
         <p data-i18n="hero.p1">

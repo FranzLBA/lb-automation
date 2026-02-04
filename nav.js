@@ -75,6 +75,11 @@
   setInterval(function () {
     slides[current].classList.remove("active");
     current = (current + 1) % slides.length;
+    // Load deferred image on first show
+    if (slides[current].dataset.src) {
+      slides[current].src = slides[current].dataset.src;
+      delete slides[current].dataset.src;
+    }
     slides[current].classList.add("active");
   }, 5000);
 })();

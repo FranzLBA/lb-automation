@@ -24,6 +24,12 @@
       }
     });
 
+    // Update page title
+    const titleKey = document.querySelector('meta[name="page-title-key"]');
+    if (titleKey && t[titleKey.content]) {
+      document.title = t[titleKey.content];
+    }
+
     // Update html lang attribute
     document.documentElement.lang = lang;
 

@@ -1,64 +1,64 @@
-// Gallery loader - automatically loads images from gallery-images.json
+// Gallery loader - loads images in batches as the user scrolls
 document.addEventListener('DOMContentLoaded', function() {
-  const galleryGrid = document.querySelector('.gallery-grid');
+  var galleryGrid = document.querySelector('.gallery-grid');
   if (!galleryGrid) return;
 
-  // Get which gallery this is from a data attribute
-  const galleryName = galleryGrid.dataset.gallery;
+  var galleryName = galleryGrid.dataset.gallery;
   if (!galleryName) return;
 
-  // Hide gallery initially
-  galleryGrid.style.opacity = '0';
+  var BATCH = 9;
+  var allImages;
+  var nextIndex = 0;
 
-  // Load the images JSON
+  function addBatch() {
+    var end = Math.min(nextIndex + BATCH, allImages.length);
+    for (var i = nextIndex; i < end; i++) {
+      var link = document.createElement('a');
+      link.href = allImages[i];
+      link.className = 'gallery-item';
+
+      var img = document.createElement('img');
+      img.src = allImages[i];
+      img.alt = '';
+      img.decoding = 'async';
+      img.onload = (function(el) {
+        return function() { el.classList.add('visible'); };
+      })(link);
+
+      link.appendChild(img);
+      galleryGrid.appendChild(link);
+    }
+    nextIndex = end;
+
+    if (nextIndex < allImages.length) {
+      watchLastItem();
+    }
+  }
+
+  function watchLastItem() {
+    var sentinel = galleryGrid.lastElementChild;
+    var obs = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        obs.disconnect();
+        addBatch();
+      }
+    }, { rootMargin: '400px' });
+    obs.observe(sentinel);
+  }
+
   fetch('/gallery-images.json')
-    .then(response => response.json())
-    .then(data => {
-      const images = data[galleryName];
-      if (!images || images.length === 0) {
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      allImages = data[galleryName];
+      if (!allImages || allImages.length === 0) {
         galleryGrid.innerHTML = '<p>Ingen billeder fundet.</p>';
-        galleryGrid.style.opacity = '1';
         return;
       }
-
-      // Clear any existing content
       galleryGrid.innerHTML = '';
-
-      let loadedCount = 0;
-      const firstBatch = Math.min(6, images.length); // Wait for first 6 images
-
-      // Create gallery items
-      images.forEach((imagePath) => {
-        const link = document.createElement('a');
-        link.href = imagePath;
-        link.className = 'gallery-item';
-
-        const img = document.createElement('img');
-        img.src = imagePath;
-        img.alt = '';
-        img.loading = 'lazy';
-        img.decoding = 'async';
-
-        // Track when first batch loads to show gallery
-        img.onload = function() {
-          loadedCount++;
-          if (loadedCount === firstBatch) {
-            galleryGrid.style.opacity = '1';
-          }
-        };
-
-        link.appendChild(img);
-        galleryGrid.appendChild(link);
-      });
-
-      // Fallback: show gallery after 2 seconds regardless
-      setTimeout(() => {
-        galleryGrid.style.opacity = '1';
-      }, 2000);
+      addBatch();
     })
-    .catch(error => {
-      console.error('Error loading gallery:', error);
+    .catch(function(err) {
+      console.error('Error loading gallery:', err);
       galleryGrid.innerHTML = '<p>Kunne ikke indlæse billeder.</p>';
-      galleryGrid.style.opacity = '1';
     });
 });

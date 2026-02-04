@@ -1,5 +1,17 @@
 const translations = {
   da: {
+    // Page titles
+    "title.home": "LBA – Specialmaskiner & Automation",
+    "title.projects": "Projekter – LBA",
+    "title.automation": "Automation – LBA",
+    "title.robots": "Robotløsninger – LBA",
+    "title.specialmachines": "Specialmaskiner – LBA",
+    "title.mechanical": "Mekanisk design – LBA",
+    "title.competences": "Kompetencer – LBA",
+    "title.about": "Om – LBA",
+    "title.contact": "Kontakt – LBA",
+    "title.404": "404 – LBA",
+
     // Navigation
     "nav.home": "Forside",
     "nav.projects": "Projekter",
@@ -77,6 +89,18 @@ const translations = {
   },
 
   en: {
+    // Page titles
+    "title.home": "LBA – Machine Building & Automation",
+    "title.projects": "Projects – LBA",
+    "title.automation": "Automation – LBA",
+    "title.robots": "Robot Solutions – LBA",
+    "title.specialmachines": "Special Machines – LBA",
+    "title.mechanical": "Mechanical Design – LBA",
+    "title.competences": "Competences – LBA",
+    "title.about": "About – LBA",
+    "title.contact": "Contact – LBA",
+    "title.404": "404 – LBA",
+
     // Navigation
     "nav.home": "Home",
     "nav.projects": "Projects",

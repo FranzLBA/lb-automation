@@ -1,3 +1,35 @@
+/* Hamburger menu (mobile) */
+(function () {
+  var nav = document.querySelector(".nav");
+  if (!nav) return;
+
+  var btn = document.createElement("button");
+  btn.className = "hamburger";
+  btn.setAttribute("aria-label", "Menu");
+  btn.innerHTML = "<span></span><span></span><span></span>";
+
+  var langToggle = nav.querySelector(".lang-toggle");
+  if (langToggle) {
+    nav.insertBefore(btn, langToggle.nextSibling);
+  } else {
+    nav.appendChild(btn);
+  }
+
+  var navLinks = nav.querySelector(".nav-links");
+
+  btn.addEventListener("click", function () {
+    btn.classList.toggle("open");
+    navLinks.classList.toggle("open");
+  });
+
+  navLinks.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      btn.classList.remove("open");
+      navLinks.classList.remove("open");
+    });
+  });
+})();
+
 (function () {
   var nav = document.querySelector(".nav-links");
   var indicator = nav.querySelector(".nav-indicator");

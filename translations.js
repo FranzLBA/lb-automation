@@ -21,6 +21,7 @@ const translations = {
 
     // Footer
     "footer.contact": "KONTAKT",
+    "footer.dira": "Medlem af DIRA",
 
     // Index - Hero
     "hero.p1": "Leunbach Automation er en lille virksomhed med stor erfaring. Som lokal totalleverandør har vi i 30 år løst specialopgaver for en lang række industrier.",
@@ -110,6 +111,7 @@ const translations = {
 
     // Footer
     "footer.contact": "CONTACT",
+    "footer.dira": "Member of DIRA",
 
     // Index - Hero
     "hero.p1": "Leunbach Automation is a small company with extensive experience. As a local full-service provider, we have solved specialized tasks for a wide range of industries for 30 years.",

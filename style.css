@@ -123,6 +123,8 @@ section {
   width: auto;
   display: block;
   background-color: var(--bg-dark);
+  position: relative;
+  top: -3px;
 }
 
 .nav-links {

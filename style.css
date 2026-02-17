@@ -124,7 +124,7 @@ section {
   display: block;
   background-color: var(--bg-dark);
   position: relative;
-  top: -8px;
+  top: -12px;
 }
 
 .nav-links {

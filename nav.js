@@ -159,3 +159,17 @@
     else show(currentIndex + 1);
   });
 })();
+
+/* Fade in images after load (hides progressive JPEG rendering) */
+(function () {
+  var imgs = document.querySelectorAll(
+    ".specialist img, .project-tile img, .about-image img, .competence-item img"
+  );
+  imgs.forEach(function (img) {
+    if (img.complete && img.naturalWidth) return;
+    img.style.opacity = "0";
+    img.addEventListener("load", function () {
+      img.style.opacity = "";
+    });
+  });
+})();

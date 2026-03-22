@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
       galleryGrid.innerHTML = '';
-      images.forEach(function(src) {
+      images.forEach(function(item) {
+        var src = item.src || item;
+
         var link = document.createElement('a');
         link.href = src;
         link.className = 'gallery-item';
@@ -25,6 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
         img.alt = '';
         img.decoding = 'async';
         img.loading = 'lazy';
+        // Set dimensions so the browser reserves the correct space before the image loads,
+        // preventing column reflow and layout shift
+        if (item.w && item.h) {
+          img.width = item.w;
+          img.height = item.h;
+        }
         img.onload = function() { link.classList.add('visible'); };
 
         link.appendChild(img);

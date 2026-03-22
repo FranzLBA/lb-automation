@@ -75,12 +75,19 @@
   setInterval(function () {
     slides[current].classList.remove("active");
     current = (current + 1) % slides.length;
-    // Load deferred image on first show
-    if (slides[current].dataset.src) {
-      slides[current].src = slides[current].dataset.src;
-      delete slides[current].dataset.src;
+    var slide = slides[current];
+    // Load deferred image on first show, wait for decode before revealing
+    if (slide.dataset.src) {
+      slide.src = slide.dataset.src;
+      delete slide.dataset.src;
+      if (slide.complete) {
+        slide.classList.add("active");
+      } else {
+        slide.onload = function () { slide.classList.add("active"); };
+      }
+    } else {
+      slide.classList.add("active");
     }
-    slides[current].classList.add("active");
   }, 5000);
 })();
 
@@ -163,7 +170,7 @@
 /* Fade in images after load (hides progressive JPEG rendering) */
 (function () {
   var imgs = document.querySelectorAll(
-    ".specialist img, .project-tile img, .about-image img, .competence-item img"
+    ".hero-slide, .specialist img, .project-tile img, .about-image img, .competence-item img"
   );
   imgs.forEach(function (img) {
     if (img.complete && img.naturalWidth) return;

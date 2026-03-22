@@ -1,4 +1,4 @@
-// Gallery loader - loads images in batches as the user scrolls
+// Gallery loader - loads images individually as the user scrolls
 document.addEventListener('DOMContentLoaded', function() {
   var galleryGrid = document.querySelector('.gallery-grid');
   if (!galleryGrid) return;
@@ -10,6 +10,16 @@ document.addEventListener('DOMContentLoaded', function() {
   var allImages;
   var nextIndex = 0;
 
+  function createImageObserver(link, img, src) {
+    var obs = new IntersectionObserver(function(entries) {
+      if (!entries[0].isIntersecting) return;
+      obs.disconnect();
+      img.src = src;
+      img.onload = function() { link.classList.add('visible'); };
+    }, { rootMargin: '100px' });
+    obs.observe(link);
+  }
+
   function addBatch() {
     var end = Math.min(nextIndex + BATCH, allImages.length);
     for (var i = nextIndex; i < end; i++) {
@@ -18,15 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
       link.className = 'gallery-item';
 
       var img = document.createElement('img');
-      img.src = allImages[i];
       img.alt = '';
       img.decoding = 'async';
-      img.onload = (function(el) {
-        return function() { el.classList.add('visible'); };
-      })(link);
+      img.loading = 'lazy';
 
       link.appendChild(img);
       galleryGrid.appendChild(link);
+
+      createImageObserver(link, img, allImages[i]);
     }
     nextIndex = end;
 

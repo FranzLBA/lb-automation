@@ -1,16 +1,16 @@
 const translations = {
   da: {
     // Page titles
-    "title.home": "LBA – Specialmaskiner & Automation",
-    "title.projects": "Projekter – LBA",
-    "title.automation": "Automation – LBA",
-    "title.robots": "Robotløsninger – LBA",
-    "title.specialmachines": "Specialmaskiner – LBA",
-    "title.mechanical": "Mekanisk design – LBA",
-    "title.competences": "Kompetencer – LBA",
-    "title.about": "Om – LBA",
-    "title.contact": "Kontakt – LBA",
-    "title.404": "404 – LBA",
+    "title.home": "LBA - Specialmaskiner & Automation",
+    "title.projects": "Projekter - LBA",
+    "title.automation": "Automation - LBA",
+    "title.robots": "Robotløsninger - LBA",
+    "title.specialmachines": "Specialmaskiner - LBA",
+    "title.mechanical": "Mekanisk design - LBA",
+    "title.competences": "Kompetencer - LBA",
+    "title.about": "Om - LBA",
+    "title.contact": "Kontakt - LBA",
+    "title.404": "404 - LBA",
 
     // Navigation
     "nav.home": "Forside",
@@ -81,7 +81,7 @@ const translations = {
     "gallery.automation.title": "Automation",
     "gallery.automation.desc": "LBA designer og bygger styretavler og automationsløsninger tilpasset det enkelte projekt. Vi arbejder med komponenter fra førende leverandører inden for PLC, servo, frekvensomformer, vision-systemer og sikkerhed. Vores fokus er på funktionalitet, ordenlig udførelse og nem vedligeholdelse - med tavler og dokumentation udført efter gældende standarder.",
     "gallery.specialmachines.title": "Specialmaskiner",
-    "gallery.specialmachines.desc": "Vi udvikler og fremstiller specialbyggede maskiner til produktion og industri. Vi arbejder sammen med jer om at finde de løsninger der bedst opfylder jeres behov — fra koncept og design til færdig maskine.",
+    "gallery.specialmachines.desc": "Vi udvikler og fremstiller specialbyggede maskiner til produktion og industri. Vi arbejder sammen med jer om at finde de løsninger der bedst opfylder jeres behov - fra koncept og design til færdig maskine.",
     "gallery.robots.title": "Robotløsninger",
     "gallery.robots.desc": "Vi leverer løsninger indenfor robotintegration, herunder indtretning robotcelle, programmering, sammenbygning af maskiner og sikkerhedsfunktioner. Med stor erfaring indenfor specialiserede End-of-Arm Tools og periferiudstyr sikrer vi effektiv håndtering af emner.",
     "gallery.mechanical.title": "Mekanisk design",
@@ -96,16 +96,16 @@ const translations = {
 
   en: {
     // Page titles
-    "title.home": "LBA – Machine Building & Automation",
-    "title.projects": "Projects – LBA",
-    "title.automation": "Automation – LBA",
-    "title.robots": "Robot Solutions – LBA",
-    "title.specialmachines": "Custom Machines – LBA",
-    "title.mechanical": "Mechanical Design – LBA",
-    "title.competences": "Competences – LBA",
-    "title.about": "About – LBA",
-    "title.contact": "Contact – LBA",
-    "title.404": "404 – LBA",
+    "title.home": "LBA - Machine Building & Automation",
+    "title.projects": "Projects - LBA",
+    "title.automation": "Automation - LBA",
+    "title.robots": "Robot Solutions - LBA",
+    "title.specialmachines": "Custom Machines - LBA",
+    "title.mechanical": "Mechanical Design - LBA",
+    "title.competences": "Competences - LBA",
+    "title.about": "About - LBA",
+    "title.contact": "Contact - LBA",
+    "title.404": "404 - LBA",
 
     // Navigation
     "nav.home": "Home",
@@ -176,7 +176,7 @@ const translations = {
     "gallery.automation.title": "Automation",
     "gallery.automation.desc": "LBA designs and builds control panels and automation solutions tailored to each project. We work with components from leading suppliers of PLCs, servo drives, frequency converters, vision systems and safety equipment. Our focus is on functionality, quality workmanship and easy maintenance - with panels and documentation executed according to current standards.",
     "gallery.specialmachines.title": "Custom Machines",
-    "gallery.specialmachines.desc": "We develop and manufacture custom-built machines for production and industry. We work with you to find the solutions that best meet your needs — from concept and design to finished machine.",
+    "gallery.specialmachines.desc": "We develop and manufacture custom-built machines for production and industry. We work with you to find the solutions that best meet your needs - from concept and design to finished machine.",
     "gallery.robots.title": "Robot Solutions",
     "gallery.robots.desc": "We deliver solutions in robot integration, including cell setup, programming, communication and safety functions. With extensive experience in specialized End-of-Arm Tools and peripheral equipment, we ensure efficient part handling.",
     "gallery.mechanical.title": "Mechanical Design",
